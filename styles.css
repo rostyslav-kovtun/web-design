@@ -1,0 +1,266 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(223, 145, 200);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 20em;
+  align-items: center;
+  color: white;
+  background: linear-gradient(to bottom, rgba(254, 178, 245, 0.25), rgba(254, 178, 245, 0));
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo img{
+  height: auto;
+  width: 80px;
+}
+
+.hero {
+  padding-top: 1em;
+  padding-bottom:  6em;
+  padding-left: 20em;
+  padding-right: 20em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description {
+  color: rgb(255, 255, 255);
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 600px;
+  font-size: 28px;
+}
+
+.description .title {
+  color: #9dff7f;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.description button {
+  background-color: rgb(245, 105, 128);
+  color: #ffffff;
+  border: solid 3px #000000;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.description button:hover {
+  background-color: #9dff7f;
+  color: rgb(0, 0, 0);
+}
+
+.hero-image img {
+  max-width: 500px;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4em;
+  padding-bottom: 12em;
+}
+
+.section-1 .title {
+  color: rgb(245, 105, 128);
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.section-1 .watermelons {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  margin-top: 4em;
+  flex-wrap: wrap;
+}
+
+.watermelon {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  text-align: center;
+}
+
+.watermelon img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 100%;
+  flex-shrink: 0;
+  border: solid 6px pink;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.watermelon.three img {
+  object-position: 50% 50%;
+}
+
+.watermelon .text {
+  color: #2d681b;
+  font-size: 18px;
+  max-width: 200px;
+}
+
+.section-2 {
+  display: flex;
+  background-color: #9dff7f;
+  padding: 10em 5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2 .container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.section-2 .container p {
+  margin: 0;
+}
+
+.section-2 .container .quote {
+  color: rgb(218, 114, 54);
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.section-2 .container .author {
+  color: rgb(141, 52, 0);
+  align-self: flex-end;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.section-3 {
+  padding: 6em 20em;
+}
+
+.section-3 .container {
+  background-color: rgb(245, 105, 128);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3em 10em;
+  border-radius: 10px;
+}
+
+.section-3 .container .title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.section-3 .container .info {
+  color: #e7e7e7;
+  font-size: 20px;
+}
+
+.section-3 .container p {
+  margin: 0;
+}
+
+.section-3 .container button {
+  background-color: rgb(245, 105, 128);
+  color: #ffffff;
+  border: solid 3px #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.section-3 .container button:hover {
+  background-color: #ffffff;
+  color: rgb(245, 105, 128);
+}
+
+.footer {
+  background-color: #df91c8;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.footer .copyright {
+  padding: 1em 0;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  gap: 1em;
+}
+
+.links a {
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  transition-duration: 0.2s;
+}
+
+a:hover {
+  color: #9dff7f;
+}
+
+/* a scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(218, 114, 54);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(141, 52, 0);
+}
