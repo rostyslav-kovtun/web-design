@@ -103,12 +103,9 @@ body {
 
 .section-1 .watermelons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 200px);
   gap: 2rem;
-  justify-items: center;
-  width: 100%;
-  max-width: 1000px;
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 .watermelon {
@@ -122,6 +119,7 @@ body {
 .watermelon img {
   height: 200px;
   width: 200px;
+  box-sizing: border-box;
   object-fit: cover;
   object-position: 0 100%;
   border: solid 6px pink;
