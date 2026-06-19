@@ -38,8 +38,8 @@ body {
 .hero {
   padding-top: 1em;
   padding-bottom:  6em;
-  padding-left: 20em;
-  padding-right: 20em;
+  padding-left: 2rem;
+  padding-right: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
