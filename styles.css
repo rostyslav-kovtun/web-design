@@ -103,10 +103,9 @@ body {
 
 .section-1 .watermelons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
-  justify-content: center;
-  gap: 4em;
-  margin-top: 4em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  justify-items: center;
 }
 
 .watermelon {
